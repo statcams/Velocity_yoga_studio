@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ContactForm from "@/components/ContactForm";
 import HeroBackground from "@/components/HeroBackground";
 import InitialsAvatar from "@/components/InitialsAvatar";
 import PageTransition from "@/components/PageTransition";
@@ -217,6 +218,41 @@ export default function HomePage() {
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Get in Touch */}
+      <section className="bg-bg-alt py-22 px-6">
+        <div className="mx-auto grid max-w-6xl items-start gap-14 lg:grid-cols-[0.9fr_1.1fr]">
+          <Reveal>
+            <span className="mb-3.5 inline-block text-xs font-semibold uppercase tracking-widest text-primary-dark">
+              Contact
+            </span>
+            <h2 className="mb-4 text-3xl font-semibold sm:text-4xl">Get in Touch</h2>
+            <p className="mb-8 text-text-soft">
+              Questions about classes, pricing, or finding us upstairs at Velocity? Send a
+              message and our front desk team will get back to you fast.
+            </p>
+            <address className="space-y-2 text-sm not-italic text-text-soft">
+              <p>9660 153rd Ave NE, Redmond, WA 98052</p>
+              <p>
+                <a href="tel:4256456656" className="hover:text-primary-dark">
+                  425-645-6656
+                </a>
+              </p>
+              <p>
+                <a href="mailto:info@skpvelocity.com" className="hover:text-primary-dark">
+                  info@skpvelocity.com
+                </a>
+              </p>
+            </address>
+          </Reveal>
+
+          <Reveal>
+            <div className="rounded-3xl border border-border bg-card p-7 sm:p-9">
+              <ContactForm />
+            </div>
+          </Reveal>
         </div>
       </section>
     </PageTransition>
