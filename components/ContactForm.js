@@ -19,6 +19,9 @@ export default function ContactForm() {
   function handleSubmit(e) {
     e.preventDefault();
     if (!form.name.trim() || !form.email.trim() || !form.message.trim()) return;
+    const subject = `New message from ${form.name} (Velocity Yoga website)`;
+    const body = `${form.message}\n\n— ${form.name} (${form.email})`;
+    window.location.href = `mailto:info@velocityyoga.co?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     setSent(true);
     setForm({ name: "", email: "", message: "" });
   }

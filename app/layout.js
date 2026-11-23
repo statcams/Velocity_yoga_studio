@@ -23,7 +23,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://www.velocityyoga.studio"),
+  metadataBase: new URL("https://velocityyoga.co"),
   title: {
     default: "Velocity Yoga Studio | Yoga Classes in Redmond, WA",
     template: "%s | Velocity Yoga Studio",
@@ -44,9 +44,9 @@ const localBusinessSchema = {
   name: "Velocity Yoga Studio",
   description:
     "Redmond's newest yoga studio, located above Velocity Pickleball Club. All-levels classes, expert teachers, and a welcoming space to move and breathe.",
-  url: "https://www.velocityyoga.studio",
-  telephone: "+14256456656",
-  email: "info@skpvelocity.com",
+  url: "https://velocityyoga.co",
+  telephone: "+14252730329",
+  email: "info@velocityyoga.co",
   address: {
     "@type": "PostalAddress",
     streetAddress: "9660 153rd Ave NE",
@@ -55,7 +55,7 @@ const localBusinessSchema = {
     postalCode: "98052",
     addressCountry: "US",
   },
-  sameAs: ["https://instagram.com/velocitypbc"],
+  sameAs: ["https://instagram.com/velocityyoga"],
 };
 
 export default function RootLayout({ children }) {

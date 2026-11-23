@@ -207,12 +207,23 @@ export default function HomePage() {
                     </span>
                     <h3 className="text-lg font-semibold">{e.title}</h3>
                     <p className="flex-1 text-sm">{e.description}</p>
-                    <Link
-                      href="/booking"
-                      className="text-sm font-semibold text-primary-dark hover:underline"
-                    >
-                      Reserve your spot &rarr;
-                    </Link>
+                    {e.link ? (
+                      <a
+                        href={e.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-semibold text-primary-dark hover:underline"
+                      >
+                        Reserve your spot &rarr;
+                      </a>
+                    ) : (
+                      <Link
+                        href="/booking"
+                        className="text-sm font-semibold text-primary-dark hover:underline"
+                      >
+                        Reserve your spot &rarr;
+                      </Link>
+                    )}
                   </div>
                 </div>
               </Reveal>
@@ -222,7 +233,7 @@ export default function HomePage() {
       </section>
 
       {/* Get in Touch */}
-      <section className="bg-bg-alt py-22 px-6">
+      <section id="get-in-touch" className="bg-bg-alt py-22 px-6">
         <div className="mx-auto grid max-w-6xl items-start gap-14 lg:grid-cols-[0.9fr_1.1fr]">
           <Reveal>
             <span className="mb-3.5 inline-block text-xs font-semibold uppercase tracking-widest text-primary-dark">
@@ -236,13 +247,13 @@ export default function HomePage() {
             <address className="space-y-2 text-sm not-italic text-text-soft">
               <p>9660 153rd Ave NE, Redmond, WA 98052</p>
               <p>
-                <a href="tel:4256456656" className="hover:text-primary-dark">
-                  425-645-6656
+                <a href="tel:4252730329" className="hover:text-primary-dark">
+                  425-273-0329
                 </a>
               </p>
               <p>
-                <a href="mailto:info@skpvelocity.com" className="hover:text-primary-dark">
-                  info@skpvelocity.com
+                <a href="mailto:info@velocityyoga.co" className="hover:text-primary-dark">
+                  info@velocityyoga.co
                 </a>
               </p>
             </address>

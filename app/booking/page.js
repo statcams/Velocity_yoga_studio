@@ -1,3 +1,4 @@
+import Script from "next/script";
 import PageTransition from "@/components/PageTransition";
 
 export const metadata = {
@@ -18,23 +19,16 @@ export default function BookingPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
-        {/*
-          DEVELOPER NOTE: this container is the reserved slot for the Wellness
-          Living booking widget iframe. Replace its contents with the embed
-          snippet once it's provided — leave the id in place if the embed
-          script targets it.
-        */}
-        <div
-          id="booking-widget-container"
-          className="flex min-h-[640px] w-full items-center justify-center rounded-3xl border-2 border-dashed border-border bg-bg-alt p-10 text-center"
-        >
-          <div>
-            <h3 className="mb-2.5 text-xl font-semibold">Booking widget coming soon</h3>
-            <p className="mx-auto max-w-sm text-text-soft">
-              This space is reserved for our online booking widget. Check back shortly, or call
-              the studio to reserve your spot in the meantime.
-            </p>
-          </div>
+        <div id="booking-widget-container" className="min-h-[640px] w-full">
+          <Script
+            type="module"
+            src="https://widgets.wellnessliving.com/schedule/widget.js"
+            strategy="afterInteractive"
+          />
+          <wl-schedule-widget
+            k_business="879941"
+            k_schema="01a10db5-fa6b-7086-8ac3-8118f86e018d"
+          ></wl-schedule-widget>
         </div>
       </section>
     </PageTransition>

@@ -14,7 +14,7 @@ export default function Footer() {
                 alt="Velocity Yoga Studio"
                 width={800}
                 height={218}
-                className="h-20 w-auto"
+                className="h-16 w-auto"
               />
             </Link>
             <p className="mt-3.5 max-w-xs text-sm text-[#a9b4bd]">
@@ -28,9 +28,8 @@ export default function Footer() {
             <ul className="space-y-2.5 text-sm text-[#a9b4bd]">
               <li><Link href="/" className="hover:text-white">Home</Link></li>
               <li><Link href="/faq" className="hover:text-white">FAQ</Link></li>
-              <li><Link href="/blog" className="hover:text-white">Blog</Link></li>
               <li><Link href="/booking" className="hover:text-white">Schedule &amp; Booking</Link></li>
-              <li><a href="mailto:info@skpvelocity.com" className="hover:text-white">Contact</a></li>
+              <li><Link href="/#get-in-touch" className="hover:text-white">Contact</Link></li>
             </ul>
           </div>
 
@@ -40,23 +39,23 @@ export default function Footer() {
               <p>9660 153rd Ave NE</p>
               <p>Redmond, WA 98052</p>
               <p>
-                <a href="tel:4256456656" className="hover:text-white">
-                  425-645-6656
+                <a href="tel:4252730329" className="hover:text-white">
+                  425-273-0329
                 </a>
               </p>
               <p>
-                <a href="mailto:info@skpvelocity.com" className="hover:text-white">
-                  info@skpvelocity.com
+                <a href="mailto:info@velocityyoga.co" className="hover:text-white">
+                  info@velocityyoga.co
                 </a>
               </p>
               <p>
                 <a
-                  href="https://instagram.com/velocitypbc"
+                  href="https://instagram.com/velocityyoga"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white"
                 >
-                  @velocitypbc
+                  @velocityyoga
                 </a>
               </p>
             </address>
@@ -69,16 +68,15 @@ export default function Footer() {
             </p>
             <NewsletterForm />
             <div className="mt-4 flex gap-3">
-              {["IG", "FB", "YT"].map((s) => (
-                <a
-                  key={s}
-                  href="#"
-                  aria-label={s}
-                  className="flex h-9 w-9 items-center justify-center rounded-full border border-[#1c3247] text-xs hover:border-accent hover:bg-accent hover:text-primary"
-                >
-                  {s}
-                </a>
-              ))}
+              <a
+                href="https://instagram.com/velocityyoga"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-[#1c3247] text-xs hover:border-accent hover:bg-accent hover:text-primary"
+              >
+                IG
+              </a>
             </div>
           </div>
         </div>

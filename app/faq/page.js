@@ -32,7 +32,7 @@ export default function FaqPage() {
               Our front desk team is happy to help with anything not covered here.
             </p>
             <Link
-              href="/booking"
+              href="/#get-in-touch"
               className="inline-block rounded-full bg-accent px-8 py-3.5 text-sm font-semibold text-primary transition hover:-translate-y-0.5 hover:bg-accent-dark"
             >
               Contact Us

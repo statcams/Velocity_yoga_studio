@@ -43,13 +43,13 @@ export default function PosesLibrary() {
             onClick={() => setSelected(pose)}
             className="overflow-hidden rounded-2xl bg-card text-left shadow-sm transition hover:-translate-y-1 hover:shadow-md"
           >
-            <div className="aspect-[4/5] overflow-hidden">
+            <div className="flex aspect-[4/5] items-center justify-center overflow-hidden bg-white p-6">
               <Image
                 src={pose.image}
                 alt={pose.imageAlt || pose.name}
                 width={450}
                 height={560}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain"
               />
             </div>
             <div className="p-4.5">
@@ -81,13 +81,13 @@ export default function PosesLibrary() {
             >
               &times;
             </button>
-            <div className="aspect-[16/9] overflow-hidden rounded-t-3xl">
+            <div className="flex aspect-[16/9] items-center justify-center overflow-hidden rounded-t-3xl bg-white p-8">
               <Image
                 src={selected.image}
                 alt={selected.imageAlt || selected.name}
                 width={900}
                 height={506}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain"
               />
             </div>
             <div className="p-8">
